@@ -1,7 +1,3 @@
-/*
-    Using 1-wire digital temperature sensor (DS18B20)
-*/
-
 import SwiftyGPIO
 import Foundation
 /*
