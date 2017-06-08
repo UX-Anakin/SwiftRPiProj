@@ -15,5 +15,5 @@ Apple has long provided Apple Remote Desktop(ARD), a tool for remotely accessing
 ```
 vnc://pi.local:5901
 ```
-![Apple Remote Desktop](Screenshot 2017-06-08 09.12.26.png)
+![Apple Remote Desktop](/img/Screenshot 2017-06-08 09.12.26.png)
 
