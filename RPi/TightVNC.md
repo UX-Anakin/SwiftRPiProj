@@ -16,4 +16,11 @@ Apple has long provided Apple Remote Desktop(ARD), a tool for remotely accessing
 vnc://pi.local:5901
 ```
 ![Apple Remote Desktop](../img/Screenshot-2017-06-08-09.12.26.png)
+and click on 'Connect'.The 'vnc' at the start sets the protocol you'll use to connect to your remote Pi, which is identified here by its Bonjour (mDNS) name, its hostname(typically set using raspi-config followed by .local).The number fater the colon is the port through which the communication takes place. **tightvncserver** default to VNC port 1.5900 is the base VNC port,hence 5901.
 
+By default tightvncserver establishes an 800 x 400 desktop, but you can change that using the -geometry switch.You can set the colour depth using the -depth switch too.
+```
+tightvncserver -geometry 1920x1080 -depth 24
+```
+
+Of course,the bigger the desktop and the higher the colour depth, the more data that needs to be sent from Pi to Mac,and the slower and less responsive the remote system will feel.Experiment to find the size you prefer.I usually stick with the default.I also set my Pis to boot to the command line and not to auto log in, so they don't run reparate X sessions in the background.
