@@ -32,7 +32,7 @@ gpio -g pwm 18 100
 ```
 Set the servo to the middle (1.5 ms) with
 ```
-gpio -g pwm 8 150
+gpio -g pwm 18 150
 ```
 And all the way to the right (2.0 ms) with
 ```
